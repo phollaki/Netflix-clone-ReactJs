@@ -1,0 +1,108 @@
+.nav {
+  position: fixed;
+  top: 0;
+  height: 33px;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
+  padding: 18px;
+  /*Animation*/
+  transition-timing-function: ease-in;
+  transition: all 0.5;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.nav__black {
+  background-color: #111;
+}
+.nav__left {
+  display: flex;
+  margin-left: 60px;
+}
+.nav__right {
+  display: flex;
+  margin-right: 70px;
+  align-items: center;
+  color: white;
+}
+.nav__logo {
+  position: fixed;
+  top: 20px;
+  left: 38px;
+  width: 98px;
+  object-fit: contain;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.nav__navItem {
+  margin-left: 30px;
+  margin-top: 3px;
+  font-size: 15.5px;
+  font-weight: 360;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.first {
+  font-weight: 600;
+  padding-left: 110px;
+}
+.nav__navItem:hover {
+  color: rgb(167, 166, 166);
+  transition: 0.25s ease-out;
+}
+.nav__rightSearchIcon {
+  margin-right: 15px;
+  font-weight: 700 !important;
+  font-size: 27px !important;
+}
+.nav__rightText {
+  cursor: pointer;
+  margin-right: 20px;
+}
+.nav__rightNoticon {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 30px !important;
+}
+.nav__rightMoreIcon {
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+.nav__avatar {
+  border-radius: 3px;
+  margin-right: 20px;
+  height: 30px;
+}
+.nav__right-notifications {
+  border-radius: 999px;
+  background-color: rgb(134, 1, 1);
+  color: white;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 17px;
+  right: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+@media only screen and (max-width: 770px) {
+  .nav__navItem {
+    display: none;
+  }
+  .first {
+    display: inline-block;
+  }
+  .nav__right {
+    font-size: 14px !important;
+  }
+}
